@@ -7,12 +7,16 @@ const person = {
 
 // Write your code here, make sure the name of variables is exactly same as mentioned in the problem statement
 
-let team = players
-let team1 = ["John", "Bob", "Alice", "Poppy"]
-let cap1 = {
-  name: "John Doe",
-  age: 80,
-};
+let team = players ;
+let team1 = [] ;
+for(let i in players){
+	team1[i] = players[i] ;
+}
+
+let cap1 = {} ;
+for(let i in person){
+	cap1[i] = person[i] ;
+}
 window.players = players;
 window.person = person;
 window.team = team;
